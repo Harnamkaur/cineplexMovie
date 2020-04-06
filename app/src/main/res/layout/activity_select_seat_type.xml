@@ -113,7 +113,7 @@
     <Button
         android:layout_width="352dp"
         android:layout_height="39dp"
-        android:background="@color/Lightorange"
+        android:background="@color/cineplexblue"
         android:onClick="bookSeats"
         android:text="BOOK TICKETS"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,5 +8,470 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
 
-</FrameLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="8dp"
+                android:elevation="8dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp">
+
+                    <ImageView
+                        android:id="@+id/Frozenimage"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/frozenpotrait"
+                        android:padding="2dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/frozentext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_toEndOf="@+id/Frozenimage"
+                        android:text="Frozen 2"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic"></TextView>
+
+                    <TextView
+                        android:id="@+id/frozen2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/frozentext"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="23dp"
+                        android:layout_toEndOf="@id/Frozenimage"
+                        android:text="162 Min"
+                        android:textSize="15sp"
+
+                        />
+
+                    <Button
+                        android:id="@+id/frozenbutton"
+                        android:layout_width="119dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="263dp"
+                        android:layout_marginTop="90dp"
+                        android:layout_marginEnd="5dp"
+
+                        android:background="@color/colorPrimary"
+                        android:shadowRadius="50"
+                        android:text="Book" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp"
+                android:elevation="8dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginTop="210dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="#fff"
+                app:cardElevation="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/fordvferraripotrait"
+                        android:id="@+id/fordImage"
+                        >
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/fordText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_toEndOf="@+id/fordImage"
+                        android:text="Ford vs Ferrai"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic"></TextView>
+
+                    <TextView
+                        android:id="@+id/ford2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fordText"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_toEndOf="@id/fordImage"
+                        android:text="190 Min"
+                        android:textSize="15sp"
+
+                        />
+
+                    <Button
+                        android:id="@+id/FordButton"
+                        android:layout_width="119dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="263dp"
+                        android:layout_marginTop="90dp"
+                        android:layout_marginEnd="5dp"
+
+                        android:background="@color/colorPrimary"
+                        android:shadowRadius="50"
+                        android:text="Book" />
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardUseCompatPadding="true"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp"
+                android:elevation="8dp"
+                android:layout_marginTop="380dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="#fff"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp">
+
+                    <ImageView
+                        android:id="@+id/ItImage"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/itpotrait"></ImageView>
+
+                    <TextView
+                        android:id="@+id/ItText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="34dp"
+                        android:layout_toEndOf="@+id/ItImage"
+                        android:text="IT"
+                        android:textSize="20sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/It2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ItText"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_toEndOf="@id/ItImage"
+                        android:text="170 Min"
+                        android:textSize="15sp"
+
+                        />
+
+                    <Button
+                        android:id="@+id/ItButton"
+                        android:layout_width="119dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="263dp"
+                        android:layout_marginTop="90dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@color/colorPrimary"
+                        android:shadowRadius="50"
+                        android:text="Book" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="4dp"
+                android:elevation="8dp"
+                android:layout_marginTop="550dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="#fff"
+                app:cardElevation="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/evilpotrait"
+                        android:id="@+id/evilImage"
+                        android:padding="2dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/evilText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_toEndOf="@+id/evilImage"
+                        android:text="Meilficient"
+                        android:textSize="20sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/evil2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/evilText"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="29dp"
+                        android:layout_toEndOf="@id/evilImage"
+                        android:text="182 Min"
+                        android:textSize="15sp"
+
+                        />
+
+                    <Button
+                        android:id="@+id/Evilbutton"
+                        android:layout_width="119dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="263dp"
+                        android:layout_marginTop="90dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@color/colorPrimary"
+                        android:shadowRadius="50"
+                        android:text="Book" />
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="4dp"
+                android:elevation="8dp"
+                android:layout_marginTop="720dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="#fff"
+                app:cardElevation="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:id="@+id/AvengersImage"
+                        android:src="@drawable/avengerspotrait"
+                        android:padding="2dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/AvengersText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="22dp"
+                        android:layout_toEndOf="@+id/AvengersImage"
+                        android:text="Avengers(end game)"
+                        android:textSize="20sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/Avengers2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/AvengersText"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="29dp"
+                        android:layout_toEndOf="@id/AvengersImage"
+                        android:text="200 Min"
+                        android:textSize="15sp"
+
+                        />
+
+                    <Button
+                        android:id="@+id/AvengersButton"
+                        android:layout_width="119dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="263dp"
+                        android:layout_marginTop="90dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@color/colorPrimary"
+                        android:shadowRadius="50"
+                        android:text="Book" />
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="4dp"
+                android:elevation="8dp"
+                android:layout_marginTop="890dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="#fff"
+                app:cardElevation="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:id="@+id/JokerImage"
+                        android:src="@drawable/jokerpotrait"
+                        android:padding="2dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/JokerText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="22dp"
+                        android:layout_toEndOf="@+id/JokerImage"
+                        android:text="Joker"
+                        android:textSize="20sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/Joker2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/JokerText"
+                        android:layout_marginStart="23dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@id/JokerImage"
+                        android:text="184 Min"
+                        android:textSize="15sp"
+
+                        />
+
+                    <Button
+                        android:id="@+id/JokerButton"
+                        android:layout_width="119dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="263dp"
+                        android:layout_marginTop="90dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@color/colorPrimary"
+                        android:shadowRadius="50"
+                        android:text="Book" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

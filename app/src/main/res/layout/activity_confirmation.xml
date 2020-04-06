@@ -131,4 +131,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.644" />
 
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="152dp"
+        android:layout_height="56dp"
+        android:background="@drawable/button"
+        android:onClick="backtomain"
+        android:text="Back to main menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

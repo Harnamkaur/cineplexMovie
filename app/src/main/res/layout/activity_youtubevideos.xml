@@ -21,7 +21,7 @@
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/youtube_player_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:background="#ebeff2"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,10 +37,11 @@
         android:background="#444"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-
         android:weightSum="10"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="217dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.297">
 
 
         <ImageButton

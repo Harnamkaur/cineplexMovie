@@ -1,22 +1,17 @@
 package com.example.letsmovie;
 
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 
 
@@ -129,8 +124,9 @@ TextView synopsis1, synopsis2, synopsis3,synopsis4,synopsis5, cast1,cast2,cast3,
                 Intent i2 = new Intent(getActivity(),FilmDescription.class);
                 i2.putExtra("name", Name2);
                 i2.putExtra("time",Time2);
-                i2.putExtra("synopsis","Elsa the Snow Queen has an extraordinary gift -- the power to create ice and snow. But no matter how happy she is to be surrounded by the people of Arendelle, Elsa finds herself strangely unsettled. After hearing a mysterious voice call out to her, Elsa travels to the enchanted forests and dark seas beyond her kingdom -- an adventure that soon turns into a journey of self-discovery.");
-                i2.putExtra("cast","Kristen Bell as Anna, Idina Menzel as Elsa, Josh Gad as Olaf, Jonathan Groff as Kristoff,Sterling K. Brown as Mattias");
+                i2.putExtra("synopsis","Seven young outcasts in Derry, Maine, are about to face their worst nightmare -- an ancient, shape-shifting evil that emerges from the sewer every 27 years to prey on the town's children. Banding together over the course of one horrifying summer, the friends must overcome their own personal fears to battle the murderous, bloodthirsty clown known as Pennywise.");
+                i2.putExtra("cast","Jaeden Lieberher as Bill Denbrough" +
+                                "\n Bill Skarsgård as It / Pennywise The Dancing Clown / Bob Gray" +  "\n Sophia Lillis as Beverly Marsh");
 
                 i2.putExtra("image",R.drawable.ittrailer);
                 startActivity(i2);
@@ -144,8 +140,8 @@ TextView synopsis1, synopsis2, synopsis3,synopsis4,synopsis5, cast1,cast2,cast3,
                 Intent i3 = new Intent(getActivity(),FilmDescription.class);
                 i3.putExtra("name", Name3);
                 i3.putExtra("time",Time3);
-                i3.putExtra("synopsis","Elsa the Snow Queen has an extraordinary gift -- the power to create ice and snow. But no matter how happy she is to be surrounded by the people of Arendelle, Elsa finds herself strangely unsettled. After hearing a mysterious voice call out to her, Elsa travels to the enchanted forests and dark seas beyond her kingdom -- an adventure that soon turns into a journey of self-discovery.");
-                i3.putExtra("cast","Kristen Bell as Anna, Idina Menzel as Elsa, Josh Gad as Olaf, Jonathan Groff as Kristoff,Sterling K. Brown as Mattias");
+                i3.putExtra("synopsis","As a beautiful young woman of pure heart, Maleficent (Angelina Jolie) has an idyllic life in a forest kingdom. When an invading army threatens the land, Maleficent rises up to become its fiercest protector. However, a terrible betrayal hardens her heart and twists her into a creature bent on revenge. She engages in an epic battle with the invading king's successor, then curses his newborn daughter, Aurora -- realizing only later that the child holds the key to peace in the kingdom.");
+                i3.putExtra("cast","Angelina Jolie as Maleficent" + "\n Elle Fanning as Aurora" + "\n Sharlto Copley as Stefan");
 
                 i3.putExtra("image",R.drawable.mailficienttrailer);
                 startActivity(i3);
@@ -158,8 +154,8 @@ TextView synopsis1, synopsis2, synopsis3,synopsis4,synopsis5, cast1,cast2,cast3,
                 Intent i4 = new Intent(getActivity(),FilmDescription.class);
                 i4.putExtra("name", Name4);
                 i4.putExtra("time",Time4);
-                i4.putExtra("synopsis","Elsa the Snow Queen has an extraordinary gift -- the power to create ice and snow. But no matter how happy she is to be surrounded by the people of Arendelle, Elsa finds herself strangely unsettled. After hearing a mysterious voice call out to her, Elsa travels to the enchanted forests and dark seas beyond her kingdom -- an adventure that soon turns into a journey of self-discovery.");
-                i4.putExtra("cast","Kristen Bell as Anna, Idina Menzel as Elsa, Josh Gad as Olaf, Jonathan Groff as Kristoff,Sterling K. Brown as Mattias");
+                i4.putExtra("synopsis","Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his oxygen supply starts to dwindle. Meanwhile, the remaining Avengers -- Thor, Black Widow, Captain America and Bruce Banner -- must figure out a way to bring back their vanquished allies for an epic showdown with Thanos -- the evil demigod who decimated the planet and the universe.");
+                i4.putExtra("cast","Robert Downey Jr. as Tony Stark / Iron Man " + "\n Chris Evans as Steve Rogers / Captain America"+"\nMark Ruffalo as Bruce Banner / Hulk"+"\nChris Hemsworth as Thor"+"\nScarlett Johansson as Natasha Romanoff / Black Widow"+"\n Josh Brolin as Thanos");
 
                 i4.putExtra("image",R.drawable.avengerstrailer);
                 startActivity(i4);
@@ -172,8 +168,9 @@ TextView synopsis1, synopsis2, synopsis3,synopsis4,synopsis5, cast1,cast2,cast3,
                 Intent i5 = new Intent(getActivity(),FilmDescription.class);
                 i5.putExtra("name", Name5);
                 i5.putExtra("time",Time5);
-                i5.putExtra("synopsis","Elsa the Snow Queen has an extraordinary gift -- the power to create ice and snow. But no matter how happy she is to be surrounded by the people of Arendelle, Elsa finds herself strangely unsettled. After hearing a mysterious voice call out to her, Elsa travels to the enchanted forests and dark seas beyond her kingdom -- an adventure that soon turns into a journey of self-discovery.");
-                i5.putExtra("cast","Kristen Bell as Anna, Idina Menzel as Elsa, Josh Gad as Olaf, Jonathan Groff as Kristoff,Sterling K. Brown as Mattias");
+                i5.putExtra("synopsis","Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets of Gotham City. Arthur wears two masks -- the one he paints for his day job as a clown, and the guise he projects in a futile attempt to feel like he's part of the world around him. Isolated, bullied and disregarded by society, Fleck begins a slow descent into madness as he transforms into the criminal mastermind known as the Joker.");
+                i5.putExtra("cast","Joaquin Phoenix as Arthur Fleck / Joker" + "\n Robert De Niro as Murray Franklin"
+                + "\n Zazie Beetz as Sophie Dumond"+ "\n Frances Conroy as Penny Fleck:");
 
                 i5.putExtra("image",R.drawable.jokertrailer);
                 startActivity(i5);

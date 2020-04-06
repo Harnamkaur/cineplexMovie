@@ -43,5 +43,12 @@ public class ConfirmationActivity extends AppCompatActivity {
 
     public void getdirections(View view) {
 
+        Intent i = new Intent(ConfirmationActivity.this,MapsActivity.class);
+        startActivity(i);
+    }
+
+    public void backtomain(View view) {
+        Intent i = new Intent(ConfirmationActivity.this,MainActivity.class);
+        startActivity(i);
     }
 }
