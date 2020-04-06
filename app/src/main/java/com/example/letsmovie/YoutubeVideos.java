@@ -1,7 +1,6 @@
 package com.example.letsmovie;
 
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -38,6 +37,7 @@ public class YoutubeVideos extends YouTubeBaseActivity implements YouTubePlayer.
     private Handler mHandler = null;
     private SeekBar mSeekBar;
 
+    private String video;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +47,8 @@ public class YoutubeVideos extends YouTubeBaseActivity implements YouTubePlayer.
        // this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         //set the fragment value to the text view
 
-
+        Intent intent= getIntent();
+        video = intent.getStringExtra("name");
 
         // Initializing YouTube player view
         YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player_view);
@@ -79,7 +80,25 @@ public class YoutubeVideos extends YouTubeBaseActivity implements YouTubePlayer.
 
         // Start buffering
         if (!wasRestored) {
-            player.cueVideo(FROZEN_VIDEO_ID);
+
+            if(video.equals( "Frozen 2")){
+                player.cueVideo(FROZEN_VIDEO_ID);
+            }
+            else if(video.equals( "Ford vs Ferrai")){
+                player.cueVideo(FORD_VIDEO_ID);
+            }
+            else if(video.equals("IT")){
+                player.cueVideo(IT_VIDEO_ID);
+            }
+            else if(video.equals("Meilficient")){
+                player.cueVideo(EVIL_VIDEO_ID);
+            }
+            else if(video.equals("Joker")){
+                player.cueVideo(JOKER_VIDEO_ID);
+            }else{
+                player.cueVideo(AVENGERS_VIDEO_ID);
+            }
+//            player.cueVideo(FROZEN_VIDEO_ID);
         }
 
         player.setPlayerStyle(YouTubePlayer.PlayerStyle.CHROMELESS);

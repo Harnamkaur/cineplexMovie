@@ -2,7 +2,6 @@ package com.example.letsmovie;
 
 import android.content.Context;
 import android.content.Intent;
-import android.icu.util.ValueIterator;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -10,13 +9,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.squareup.picasso.Picasso;
-
 public class FilmDescription extends AppCompatActivity  {
 
     TextView FileTitle, FileDuration;
     ImageButton imgbutton , imgbutton2;
-
+String Name;
     private Context context = this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +22,7 @@ public class FilmDescription extends AppCompatActivity  {
 
 
         Intent intent= getIntent();
-        String Name = intent.getStringExtra("name");
+         Name = intent.getStringExtra("name");
         String Time = intent.getStringExtra("time");
         String Synopsis = intent.getStringExtra("synopsis");
         String Cast = intent.getStringExtra("cast");
@@ -74,6 +71,7 @@ public class FilmDescription extends AppCompatActivity  {
     public void trailerplay(View view) {
 
         Intent i = new Intent(FilmDescription.this,YoutubeVideos.class);
+        i.putExtra("name",Name);
         startActivity(i);
     }
 
