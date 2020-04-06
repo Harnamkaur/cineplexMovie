@@ -7,30 +7,31 @@
     tools:context=".SelectSeatType">
 
 
-    <ImageView
-        android:layout_width="114dp"
-        android:layout_height="74dp"
-        android:src="@drawable/frozen"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.062"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03">
+<!--    <ImageView-->
+<!--        android:layout_width="114dp"-->
+<!--        android:layout_height="74dp"-->
+<!--        android:src="@drawable/frozen"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.062"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.03">-->
 
-    </ImageView>
+<!--    </ImageView>-->
+
 
     <TextView
-        android:id="@+id/textView10"
-        android:layout_width="160dp"
-        android:layout_height="40dp"
-        android:text="FROZEN"
+        android:id="@+id/seattypename"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text=""
         android:textColor="@color/black"
         android:textSize="30dp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.665"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.028" />
@@ -43,25 +44,23 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.107" />
-
+        app:layout_constraintVertical_bias="0.105" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/timeseat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="162 Min"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintHorizontal_bias="0.233"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.107" />
-
+        app:layout_constraintVertical_bias="0.105" />
 
     <TextView
         android:id="@+id/textView9"

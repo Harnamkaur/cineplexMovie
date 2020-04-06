@@ -13,7 +13,7 @@ public class FilmDescription extends AppCompatActivity  {
 
     TextView FileTitle, FileDuration;
     ImageButton imgbutton , imgbutton2;
-String Name;
+String Name, Time;
     private Context context = this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ String Name;
 
         Intent intent= getIntent();
          Name = intent.getStringExtra("name");
-        String Time = intent.getStringExtra("time");
+         Time = intent.getStringExtra("time");
         String Synopsis = intent.getStringExtra("synopsis");
         String Cast = intent.getStringExtra("cast");
 
@@ -65,6 +65,9 @@ String Name;
     }
     public void bookFilm(View view) {
         Intent i = new Intent(FilmDescription.this,SelectSeatType.class);
+        i.putExtra("name",Name);
+        i.putExtra("time",Time);
+
         startActivity(i);
     }
 

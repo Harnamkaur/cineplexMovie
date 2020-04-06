@@ -1,7 +1,5 @@
 package com.example.letsmovie;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -12,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,6 +48,12 @@ public class SelectSeatType extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_seat_type);
 
+        TextView textView = findViewById(R.id.seattypename);
+        TextView textView1 = findViewById(R.id.timeseat);
+
+        Intent intent = getIntent();
+        textView.setText(intent.getStringExtra("name"));
+        textView1.setText(intent.getStringExtra("time"));
 
         layout = findViewById(R.id.layoutSeat);
 
