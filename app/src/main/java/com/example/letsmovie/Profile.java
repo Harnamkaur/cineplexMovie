@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -44,7 +46,8 @@ public class Profile extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         SharedPreferences myPref = getSharedPreferences("UserUid",MODE_PRIVATE);
         userUid = myPref.getString("uid","");
         System.out.println("uiddd is"+userUid);
@@ -99,7 +102,16 @@ public class Profile extends AppCompatActivity  {
 
     }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id =item.getItemId();
+        if (id ==android.R.id.home){
+            //ends the activity
+            this.finish();
+        }
 
+        return super.onOptionsItemSelected(item);
+    }
 
 
     public void update(View view) {

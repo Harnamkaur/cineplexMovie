@@ -20,8 +20,9 @@ public class ConfirmationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirmation);
-
-
+//add back button
+getSupportActionBar().setDisplayShowHomeEnabled(true);
+getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         Intent i = getIntent();
 
         seatvalue = i.getStringExtra("seatslist");
@@ -41,6 +42,24 @@ public class ConfirmationActivity extends AppCompatActivity {
 
     }
 
+    @Override
+//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+//        int id =item.getItemId();
+//        if (id ==android.R.id.home){
+//            //ends the activity
+//            this.finish();
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
+
+    public void onBackPressed()
+    {
+        super.onBackPressed();
+        startActivity(new Intent(ConfirmationActivity.this, MainActivity.class));
+        finish();
+
+    }
     public void getdirections(View view) {
 
         Intent i = new Intent(ConfirmationActivity.this,MapsActivity.class);

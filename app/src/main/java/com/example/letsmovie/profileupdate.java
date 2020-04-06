@@ -1,50 +1,31 @@
 package com.example.letsmovie;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
+import android.view.MenuItem;
 import android.view.View;
-import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-import com.google.android.gms.tasks.OnCompleteListener;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
-import com.google.type.Date;
 import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;
-
-import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-
-import javax.xml.transform.Result;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -66,6 +47,10 @@ public class profileupdate extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profileupdate);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
         mStorageRef = FirebaseStorage.getInstance().getReference("profilepics");
         mAuth = FirebaseAuth.getInstance();
         db= FirebaseFirestore.getInstance();
@@ -113,36 +98,7 @@ public class profileupdate extends AppCompatActivity  {
 
 
 
-//    private String getExtension(Uri uriProfileImage)
-//    {
-//        ContentResolver cr = getContentResolver();
-//        MimeTypeMap mimeTypeMap = MimeTypeMap.getSingleton();
-//        return mimeTypeMap.getExtensionFromMimeType(cr.getType(uriProfileImage));
 //
-//    }
-
-//    private void FileUploader()
-//    {
-//        StorageReference reference = mStorageRef.child(System.currentTimeMillis()+"."+getExtension(uriProfileImage));
-//
-//        reference.putFile(uriProfileImage)
-//                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-//                    @Override
-//                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-//
-//
-//
-//                    }
-//
-//                })
-//                .addOnFailureListener(new OnFailureListener() {
-//                    @Override
-//                    public void onFailure(@NonNull Exception exception) {
-//                        // Handle unsuccessful uploads
-//                        // ...
-//                    }
-//                });
-//    }
 
 
     private boolean validateInputs(String name1, String phone1, String credicard1, String expiry1, String cvv1)
@@ -227,13 +183,7 @@ public class profileupdate extends AppCompatActivity  {
                     }
                 })
 
-//            dbProducts.add(user1)
-//                    .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-//                        @Override
-//                        public void onSuccess(DocumentReference documentReference) {
-//                            Toast.makeText(profileupdate.this, "User Information update",Toast.LENGTH_LONG).show();
-//                        }
-//                    })
+//
                         .addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
@@ -246,7 +196,16 @@ public class profileupdate extends AppCompatActivity  {
         }
 
     }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id =item.getItemId();
+        if (id ==android.R.id.home){
+            //ends the activity
+            this.finish();
+        }
 
+        return super.onOptionsItemSelected(item);
+    }
 
 
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -269,46 +228,7 @@ public class profileupdate extends AppCompatActivity  {
 
 
     }
-//
-//    private void  (){
-//
-//        final StorageReference profileImageRef=
-//                FirebaseStorage.getInstance().getReference("profile photos/"+System.currentTimeMillis()+".jpg");
-//
-//
-//        if (uriProfileImage != null)
-//        {
-//            progressBar.setVisibility(View.VISIBLE);
-//            profileImageRef.putFile(uriProfileImage).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-//                @Override
-//                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-//                    progressBar.setVisibility(View.GONE);
-//
-//                    profileImageurl = taskSnapshot.getStorage().getDownloadUrl().toString();
-//
-//                }
-//            })
-//                    .addOnFailureListener(new OnFailureListener() {
-//                        @Override
-//                        public void onFailure(@NonNull Exception e) {
-//                            progressBar.setVisibility(View.GONE);
-//                            Toast.makeText(profileupdate.this,e.getMessage(),Toast.LENGTH_SHORT).show();
-//                        }
-//                    });
-//        }else{
-//            System.out.println("image is null");
-//        }
-//
-//    }
-//
-//    private void showImageChooser(){
-//        Intent i = new Intent();
-//        i.setType("image/*");
-//        i.setAction(Intent.ACTION_GET_CONTENT);
-//        startActivityForResult(Intent.createChooser(i,"Select Profile Image"), CHOOSE_IMAGE);
-//    }
-//
-//
+
 
 
 
