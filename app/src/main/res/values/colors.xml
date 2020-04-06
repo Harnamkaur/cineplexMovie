@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1E63A6</color>
+
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="Darkorange">#DFA748</color>
+    <color name="Lightorange">#FBC02D</color>
+    <color name="cream">#FFFFFF</color>
+    <color name="grey">#706F6C</color>
+    <color name="mehroon">#CE6635</color>
+    <color name="black">#020101</color>
+    <color name="shadow">#555555</color>
+    <color name="seagreen">#20BFAD</color>
+    <color name="cineplexblue">#1E63A6</color>
+
+</resources>

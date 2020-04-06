@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".profileupdate">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="229dp"
+
+        android:background="@color/Lightorange"
+        android:orientation="vertical">
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="165dp"-->
+        <!--            android:layout_height="183dp"-->
+        <!--            android:id="@+id/profilepicedit"-->
+
+        <!--            android:layout_gravity="center"-->
+        <!--            android:background="@color/Lightorange"-->
+        <!--            android:src="@drawable/usser_burned"></ImageView>-->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="392dp"
+        android:layout_height="165dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/usser_burned"
+        app:civ_border_color="@color/cream"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+        <ProgressBar
+            android:id="@+id/profileprogress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone">
+
+        </ProgressBar>
+
+        <TextView
+            android:layout_width="276dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="Click on image to set the profile photo"></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/nameedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="text"
+            android:lines="2" />
+
+
+        <EditText
+            android:id="@+id/phoneedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:hint="Phone number"
+            android:inputType="text" />
+
+
+        <EditText
+            android:id="@+id/creditcardedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:hint="Credit card number"
+            android:inputType="text" />
+
+
+        <EditText
+            android:id="@+id/expiryedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:hint="Expiry  Date(MM.DD)"
+            android:inputType="text" />
+
+
+        <EditText
+            android:id="@+id/cvvedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:hint="Security or CVV number-   "></EditText>
+
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/mybutton"
+            android:text="Update Information"
+            android:textColor="@color/cream" />
+
+    </LinearLayout>
+
+</RelativeLayout>

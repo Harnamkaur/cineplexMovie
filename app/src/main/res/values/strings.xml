@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Cineplex</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="next">26 nov</string>
+    <string name="next2">27 nov</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+
+    <string-array name="Seats">
+        <item>Platinium</item>
+        <item>Silver</item>
+        <item>Golden</item>
+    </string-array>
+
+    <string-array name="Seatnumber">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_get_directions">Map</string>
+</resources>
