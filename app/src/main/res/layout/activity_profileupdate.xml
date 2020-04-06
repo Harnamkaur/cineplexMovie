@@ -51,13 +51,6 @@
 
         </ProgressBar>
 
-        <TextView
-            android:layout_width="276dp"
-            android:layout_marginTop="20dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="70dp"
-            android:text="Click on image to set the profile photo"></TextView>
-
 
     </LinearLayout>
 
@@ -119,9 +112,9 @@
 
         <Button
             android:id="@+id/button_update"
-            android:layout_width="wrap_content"
+            android:layout_width="178dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="130dp"
+            android:layout_marginLeft="100dp"
             android:layout_marginTop="30dp"
             android:background="@drawable/mybutton"
             android:text="Update Information"

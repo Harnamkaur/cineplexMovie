@@ -119,8 +119,5 @@ public class Profile extends AppCompatActivity  {
         startActivity(i);
     }
 
-    public void back(View view) {
-        Intent i = new Intent(Profile.this,MainActivity.class);
-        startActivity(i);
-    }
+
 }

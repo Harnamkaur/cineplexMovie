@@ -172,18 +172,6 @@
                 android:textColor="@color/cream"
                 android:textStyle="italic" />
 
-            <Button
-                android:id="@+id/button_update2"
-                android:layout_width="191dp"
-                android:layout_height="32dp"
-                android:layout_marginLeft="70dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/mybutton"
-                android:onClick="back"
-                android:text="Back to Main screen"
-                android:textColor="@color/cream"
-                android:textStyle="italic" />
-
         </LinearLayout>
     </LinearLayout>
 

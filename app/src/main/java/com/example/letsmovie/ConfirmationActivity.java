@@ -2,9 +2,11 @@ package com.example.letsmovie;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ConfirmationActivity extends AppCompatActivity {
@@ -43,15 +45,15 @@ getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
-//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-//        int id =item.getItemId();
-//        if (id ==android.R.id.home){
-//            //ends the activity
-//            this.finish();
-//        }
-//
-//        return super.onOptionsItemSelected(item);
-//    }
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id =item.getItemId();
+        if (id ==android.R.id.home){
+            //ends the activity
+            this.finish();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
     public void onBackPressed()
     {
