@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='LetsMovie'
+rootProject.name='letsMovie'

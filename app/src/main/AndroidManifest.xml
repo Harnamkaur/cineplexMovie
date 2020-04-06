@@ -43,16 +43,16 @@
         <activity android:name=".SelectSeatType" />
         <activity android:name=".SelectCinemaSeat" />
         <activity android:name=".YoutubeVideos" />
-        <activity android:name=".splashScreen" />
         <activity android:name=".profileupdate" />
         <activity android:name=".First">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".splash" />
+        <activity android:name=".splash">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
         <activity android:name=".SignUp" />
         <activity android:name=".Login" />
         <activity android:name=".Profile" />
